@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Jash Cafe</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400;700&family=Londrina+Sketch&family=Special+Elite&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome for Social Media Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            body {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Black overlay */ url('images/Bistro.webp');
+                font-family: 'Crimson Text', serif; /* Default body font */
+            }
+            ul {
+                display: flex;
+                justify-content: flex-end; /* Align items to the right */
+                font-size: 25px;
+                list-style-type: none;
+                margin: 0; /* Remove default margin */
+                padding: 20px; /* Add padding to position links */
+                position: absolute; /* Position the navigation menu absolutely */
+                top: 30px; /* Align it at the very top of the page */
+                right: 20px; /* Stick it to the right */
+                background-color: white; /* Optional: background color for contrast */
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: 'Crimson Text', serif; /* Apply Crimson Text to anchor links */
+            }
+            a:hover {
+                color: burlywood;
+            }
+            li {
+                padding-right: 20px;
+            }
+            h1 {
+                font-family: 'Special Elite', cursive; /* Special Elite for the title */
+                font-size: 48px; /* Adjust size as needed */
+                text-align: center;
+                margin-top: 30px; 
+                color: black;/* Reduced margin for better positioning */
+            }
+            img {
+                width: 100px;
+                position: absolute; /* Keep absolute positioning */
+                top: 15px; /* Adjust as needed */
+                left: 20px; /* Adjust as needed */
+            }
+
+            /* h3 animation: slide down from top */
+            h3 {
+                font-family: 'Dancing Script', cursive; /* Apply Dancing Script font */
+                font-size: 36px; /* Adjust size as needed */
+                color: burlywood;
+                text-align: center;
+                position: relative;
+                animation: slideDown 1s ease-in; /* Add animation */
+            }
+
+            /* pre animation: slide up from bottom */
+            pre {
+                font-family: 'Teko', sans-serif; /* Apply Teko font for h2 */
+                font-size: 50px; /* Adjust size as needed */
+                text-align: center;
+                margin-top: 40px;
+                color: whitesmoke;
+                position: relative;
+                animation: slideUp 1s ease-out; /* Add animation */
+            }
+
+            /* Slide down animation for h3 */
+            @keyframes slideDown {
+                from {
+                    top: -50px; /* Start from above the screen */
+                    opacity: 0;
+                }
+                to {
+                    top: 0; /* End at original position */
+                    opacity: 1;
+                }
+            }
+
+            /* Slide up animation for pre */
+            @keyframes slideUp {
+                from {
+                    bottom: -50px; /* Start from below the screen */
+                    opacity: 0;
+                }
+                to {
+                    bottom: 0; /* End at original position */
+                    opacity: 1;
+                }
+            }
+
+            /* Style for social media icons */
+            .social-icons {
+                position: absolute; /* Keep absolute positioning */
+                top: 50px; /* Adjust as needed */
+                left: 150px;
+            }
+            .social-icons a {
+                color: rgb(97, 81, 64);
+                margin: 0 10px;
+                font-size: 40px;
+                text-decoration: none;
+            } 
+            .social-icons a:hover {
+                color: burlywood;
+            }
+            .container {
+                background-color: rgb(255, 255, 255); /* Container background color */
+                padding: 20px; /* Optional padding */
+                color: white; /* Make text inside the container white for contrast */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Jash Cafe</h1>
+            <img src="images/Minimalist JS Letter Logo_20241018_231950_0000.png" alt="Jash Cafe Logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About  us.html">About us</a></li>
+                <li><a href="our story.html">Our story</a></li>
+                <li><a href="menus.html">Menus</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/jaisshree4" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div><br><br><br><br><br><br>
+        <h3>"Welcome to Jash Cafe"</h3>
+        <pre>A Cozy Corner for 
+Every Coffee Lover.!!</pre>
+    </body>
+</html>

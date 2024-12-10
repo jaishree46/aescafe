@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400;700&family=Londrina+Sketch&family=Special+Elite&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image: url(images/Screenshot\ \(61\).png);
+            }
+            h1 {
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                color: burlywood;
+                margin-top: 80px;
+                font-size: 50px;
+            }
+            h2 {
+                font-family: 'Special Elite', cursive;
+                text-align: center;
+                font-size: 35px;
+                color: black;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+                position: relative;
+                width: 100%;
+            
+            }
+            img {
+                width: 500px;
+                height: 500px;
+                object-fit: cover; /* Ensures all images fit within the box and maintain proportions */
+                opacity: 0;
+                animation: slide 20s infinite;
+            }
+            img:nth-child(1) { animation-delay: 0s; }
+            img:nth-child(2) { animation-delay: 0s; }
+            img:nth-child(3) { animation-delay: 0s; }
+            img:nth-child(4) { animation-delay: 0s; }
+
+            @keyframes slide {
+                0%, 100% { opacity: 0; }
+                10%, 25% { opacity: 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Our</h1>
+        <h2>Gallery</h2>
+        <div class="container">
+            <img src="images/gal1.webp" alt="Gallery Image 1">
+            <img src="images/gal1.webp" alt="Gallery Image 2">
+            <img src="images/gal3.webp" alt="Gallery Image 3">
+            <img src="images/gal3.webp" alt="Gallery Image 4">
+        </div>
+    </body>
+</html>

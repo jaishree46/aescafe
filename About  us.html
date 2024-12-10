@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>About us</title>
+    <!-- Google Fonts Import for Teko -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            overflow: hidden; /* Prevent scrollbars from appearing */
+            background-image: url(images/Screenshot\ \(61\).png);
+        }
+        pre{
+            font-family: 'Teko', sans-serif;
+        }
+        /* Style for the first pre tag */
+        .highlighted-text {
+            font-family: 'Teko', sans-serif;
+            font-size: 40px; /* Adjust size as needed */
+            text-align: center;
+            margin-top: 70px;
+            color: black;
+            position: relative;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center align items horizontally */
+          
+        }
+
+        /* Style for the second pre tag */
+        .description-text {
+            font-family: 'Teko', sans-serif;
+            font-size: 20px; /* Different size for the second pre tag */
+            color: #555; /* Change color for differentiation */
+            text-align: left; /* Center align text */
+            margin-top: 150px; 
+            margin-left: 400px;/* Space from the previous element */
+            padding: 10px; /* Add some padding */
+        }
+
+        .coffee-container {
+            position: absolute; /* Position coffee image absolutely */
+            top: 60px; /* Distance from the top */
+            left: 90px; /* Distance from the left */
+            animation: float 3s ease-in-out infinite; /* Floating animation */
+        }
+
+        .coffe-image {
+            height: 400px; /* Set height for the coffee image */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Floating shadow effect */
+        }
+
+        .croissant-container {
+            position: absolute; /* Position croissant image absolutely */
+            bottom: 40px; /* Distance from the bottom */
+            right: 150px; /* Distance from the right */
+            animation: float 3s ease-in-out infinite; /* Floating animation */
+        }
+
+        .crossisant-image {
+            height: 400px; /* Set height for the croissant image */
+            width: 500px; /* Set width for the croissant image */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Floating shadow effect */
+        }
+
+        /* Keyframes for floating effect */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px); /* Starting position */
+            }
+            50% {
+                transform: translateY(-10px); /* Middle position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex container to align the items -->
+    <div class="coffee-container">
+        <img class="coffe-image" src="images/cfimg.jpg" alt="Coffee Image">
+    </div>
+    <div class="highlighted-text">
+        <pre>"Treat in the extraordinary at Jash cafe, 
+where every sip and bite is a masterpiece crafted
+just for you."</pre>
+    </div>
+    <div class="croissant-container">
+        <img class="crossisant-image" src="images/cross.avif" alt="Croissant Image">
+    </div>
+    <div class="description-text">
+        <pre>At Jash cafe, our passion is to deliver an unforgettable dining 
+experience through a fusion of globally inspired flavors and the 
+freshest local ingredients. Founded by a celebrity chef with a 
+vision to bring world-class cuisine to Nellai, our cafe celebrates 
+culinary excellence and innovation.</pre>
+    </div>
+</body>
+</html>
